@@ -9,8 +9,8 @@ SET SQL_MODE="NO_AUTO_VALUE_ON_ZERO";
 --
 -- Database: `magazin`
 --
-CREATE DATABASE `searchbing` DEFAULT CHARACTER SET latin1 COLLATE latin1_swedish_ci;
-USE `searchbing`;
+CREATE DATABASE `bingsearch` DEFAULT CHARACTER SET latin1 COLLATE latin1_swedish_ci;
+USE `bingsearch`;
 
 -- --------------------------------------------------------
 

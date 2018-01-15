@@ -1,4 +1,4 @@
- body {
+body {
             font-family: Arial;
             background-image: url("mare.jpg");
             /*~webkit-background-size:cover;*/
@@ -123,5 +123,3 @@
             .overlay button:hover {
                 background: #bbb;
             }
-
-        

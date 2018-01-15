@@ -17,6 +17,9 @@ function readRecords() {
     });
 }
 
+
+
+
 function displayColumns(value) {
     return 	'<td>'+value.id+'</td>'
             + '<td class="name">'+value.name+'</td>'

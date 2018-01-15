@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+     <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <script type="text/javascript" src="js/serialize.js"></script>
+    <script type="text/javascript" src="js/keywords.js"></script>
+</head>
+<body>
+   <div class="container">
+    <div class="row">
+        <div class="col-md-12" style="position:center;">
+            <h1 >Bing search!</h1>
+        </div>
+    </div>
+    <ul class="nav nav-tabs">
+      <li role="presentation" class="active"><a href="users.html">Utilizatori</a></li>
+      <li role="presentation"><a href="keywords.html">Cuvinte cheie</a></li>
+      <li role="presentation"><a href="bing.html">Bing search!</a></li>
+    </ul>
+    </div>
+  
+<form method="get" action="http://www.bing.com/search" style="margin-top:150px;margin-left:470px;">
+   <input type="hidden" name="cp" value="1252" ?>
+   <img src="http://www.microsoft.com/presspass/_resources/images/img_windowsBingLogo.png" alt="Bing" /></a>
+   <input id="bingInput" type="text" name="q" size="30" maxlength="255" />
+   <input type="submit" value="Search Site" />
+   <input type="hidden" name="q1" value="site:bucarotechelp.com" />
+   
+</form>
+
+<div style="margin-left:531px;">
+  <input id="wordFromKeyboard" type="text" placeholder="Write the word..." size="30"/>
+  <button id="butonId" onclick="readById()">Press!</button>
+  </div>
+</body>
+</html>

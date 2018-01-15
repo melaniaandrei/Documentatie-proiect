@@ -9,7 +9,7 @@
 
     <!-- Bootstrap CSS File  -->
     <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
-    
+    <link rel="stylesheet" type="text/css" href="css/main.css">
     <!-- Bootstrap JS file -->
     <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     
@@ -24,27 +24,26 @@
 <div class="container">
     <div class="row">
         <div class="col-md-12">
-            <h1>Efectueaza-ti cautarile</h1>
+            <h1>Gestionare cautari.</h1>
         </div>
     </div>
     <ul class="nav nav-tabs">
       <li role="presentation"><a href="users.html">Utilizatori</a></li>
       <li role="presentation" class="active"><a href="keywords.html">Cuvinte cheie</a></li>
+         <li role="presentation"><a href="bing.html">Bing search!</a></li>
     </ul>
     <br/>
-    <div class="row">
-        <div class="col-md-12">
+      <div class="col-md-12">
             <div class="pull-right">
                 <button class="btn btn-success" data-toggle="modal" data-target="#add_new_record_modal" onclick="addRecord()">Adauga</button>
             </div>
         </div>
-    </div>
     <div class="row">
         <div class="col-md-12">
             <div class="records_content">
                 <br/>
-                <h3>Locati</h3>
-                <table id="articles" class="table table-bordered table-striped">
+                <h3>Keywords</h3>
+                <table id="articles" class="table-bordered" style="background-color:white;">
 						<tr>
 							<th>ID.</th>
 							<th>Nume utilizator</th>
@@ -55,10 +54,15 @@
 						</tr>
             		</tr>
 				</<table>
+				    <div class="row">
+      
+    </div>
             </div>
         </div>
     </div>
+    
 </div>
+
 <!-- /Content Section -->
 
 
@@ -75,7 +79,7 @@
                 <form id="record_form">
                     <input type="hidden" name="id" id="id" />
                     <div class="form-group">
-                        <label for="name">ID Turist</label>
+                        <label for="name">ID User</label>
                         <input type="text" name="users_id" id="users_id" placeholder="ID Utilizator" class="form-control"/>
                     </div>
                     <div class="form-group">

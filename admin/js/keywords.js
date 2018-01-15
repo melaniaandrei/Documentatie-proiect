@@ -17,6 +17,24 @@ function readRecords() {
     });
 }
 
+function readById(){
+    var k=0;
+    $.get("/word/", {}, function (data, status) {
+        data.forEach(function(value) {
+            if($('#wordFromKeyboard').val()===value.word)
+            {
+                $('#bingInput').val($('#wordFromKeyboard').val());
+                k=1;
+            }
+             
+        });
+        if(k===0){
+            alert("Invalid word! Database doesn't contains that value!");
+        }
+        $('#wordFromKeyboard').val("");
+    });
+}
+
 function displayColumns(value) {
     return 	'<td>'+value.id+'</td>'
             + '<td class="users_id">'+value.user.name+'</td>'
@@ -35,6 +53,7 @@ function addRecord() {
     $('#word').val('');
    
     $('#myModalLabel').html('Add New Word');
+    
 }
 
 function viewRecord(id) {
